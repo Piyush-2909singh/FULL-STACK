@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Newspaper Editorial</title>
+        <style>
+            body {
+                background-color: #f7f5f0;
+                color: #111;
+                font-family: 'Times New Roman', Times, serif;
+                margin: 0;
+                padding: 40px 20px;
+            }
+
+            .newspaper-container {
+                max-width: 920px;
+                margin: 0 auto;
+                border: 1px solid #111;
+                padding: 30px;
+                background-color: #fff;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            }
+
+            /* Masthead / Top Header */
+            .masthead {
+                text-align: center;
+                border-bottom: 3px double #111;
+                padding-bottom: 8px;
+            }
+
+            .masthead h1 {
+                font-size: 3.2rem;
+                font-weight: 900;
+                letter-spacing: 5px;
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+            .date-line {
+                display: flex;
+                justify-content: space-between;
+                border-top: 1px solid #111;
+                border-bottom: 1px solid #111;
+                padding: 4px 10px;
+                font-size: 0.85rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            .article-title {
+                text-align: center;
+                font-size: 2rem;
+                font-style: italic;
+                margin: 25px 0 20px 0;
+                font-weight: normal;
+            }
+
+            /* 3-Column Newspaper Grid Layout */
+            .editorial-layout {
+                display: grid;
+                grid-template-columns: 1fr 260px 1fr;
+                gap: 20px;
+                align-items: start;
+            }
+
+            .editorial-layout p {
+                margin: 0;
+                text-align: justify;
+                line-height: 1.5;
+                font-size: 1.05rem;
+            }
+
+            /* Classic Drop Cap for First Letter */
+            #p1::first-letter {
+                font-size: 3.5rem;
+                float: left;
+                line-height: 0.8;
+                padding-right: 8px;
+                font-weight: bold;
+                font-family: inherit;
+            }
+
+            /* Figure and Caption */
+            .image-box {
+                margin: 0;
+                border: 1px solid #111;
+                padding: 6px;
+                background: #fafafa;
+                text-align: center;
+            }
+
+            .image-box img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .image-box figcaption {
+                font-size: 0.8rem;
+                font-style: italic;
+                color: #444;
+                margin-top: 6px;
+                line-height: 1.2;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="newspaper-container">
+            <!-- Masthead -->
+            <header class="masthead">
+                <h1>EDITORIAL</h1>
+                <div class="date-line">
+                    <span>Vol. CXXIV No. 42</span>
+                    <span>THE DAILY CHRONICLE</span>
+                    <span>Friday, August 20, 2026</span>
+                </div>
+            </header>
+
+            <h2 class="article-title">Europe's Summer Reading List</h2>
+
+            <!-- Editorial Layout -->
+            <div class="editorial-layout">
+                <p id="p1">
+                    BERLIN — European researchers successfully tested a low-cost, grid-scale iron-air battery on Friday that can store power for up to 100 hours at a fraction of the cost of lithium-ion systems. The breakthrough, detailed in the journal Nature Energy, addresses a major bottleneck for renewable energy by providing cheap, long-duration backup power when wind and solar output drops.
+                </p>
+
+                <figure class="image-box">
+                    <img src="C:\Users\lenovo\Downloads\politicalcartoon5.jpg" id="img1" alt="Editorial Cartoon">
+                    <figcaption>Political cartoon illustrating energy grid innovations.</figcaption>
+                </figure>
+
+                <p id="p2">
+                    BERLIN — European researchers successfully tested a low-cost, grid-scale iron-air battery on Friday that can store power for up to 100 hours at a fraction of the cost of lithium-ion systems. The breakthrough, detailed in the journal Nature Energy, addresses a major bottleneck for renewable energy by providing cheap, long-duration backup power when wind and solar output drops.
+                </p>
+            </div>
+        </div>
+
+    </body>
+</html>

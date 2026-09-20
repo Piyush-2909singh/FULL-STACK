@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <title>Page Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .slider{
+            display:inline-flex;
+            overflow:scroll;
+            scrollbar-width: none;
+            width: 100vw;
+        }
+        .item{
+            top:10%;
+            height: 600px;
+            min-width: 100vw;
+            position:sticky;
+            left: 0;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            -webkit-text-stroke-width: 2px
+        }
+    </style>
+
+</head>
+<body>
+    <div class="slider">
+        <div class="item" style="background-color: #00f324;"> <h1>1</h1></div>
+        <div class="item" style="background-color: #ff0400;"> <h1>2</h1></div>
+        <div class="item" style="background-color: #0408ff;"> <h1>3</h1></div>
+        <div class="item" style="background-color: #dbee07;"> <h1>4</h1></div>
+        <div class="item" style="background-color: #df0a94;"> <h1>5</h1></div>
+    </div>
+</body>
+</html>>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    @layer base,special,super-special;
+    @layer super-special{
+        .test1{
+            font-size:100px;
+            color:blue;
+
+        }
+    }
+    @layer special{
+        .test1{
+            font-size:50px;
+            color:red;
+        }
+    }
+    @layer base{
+        .para{
+            font-size:30px;
+            color:rgb(0, 255, 110);
+        }
+    }
+    @layer special{
+        .highlight-para{
+            font-size:50px;
+            color:red;
+        }
+    }
+
+   </style>
+</head>
+<body>
+    <p class="para highlight-para">hello world</p>
+    <p class="test1">HELLO GLA HOW ARE YOU</p>
+    <h2 class="para highlight-para">HELLO GLA HOW ARE YOU</h2>
+
+</body>
+</html>

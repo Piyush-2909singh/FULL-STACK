@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pokemon Generations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* reset */
+        *{ margin:0; padding:0; box-sizing:border-box }
+
+        :root{
+            --bg: linear-gradient(120deg,#041022,#071a2a);
+            --accent: #ffd92f;
+        }
+
+        body{
+            font-family: Inter, Arial, sans-serif;
+            background: var(--bg);
+            color:#fff;
+            min-height:100vh;
+            overflow-x:hidden;
+        }
+
+        .heading{
+            font-family: 'Oswald', Arial, sans-serif;
+            font-size:64px;
+            color:var(--accent);
+            text-align:center;
+            padding:30px 10px;
+            text-shadow: 0 6px 18px rgba(0,0,0,0.7);
+        }
+
+        .gallery{
+            display:flex;
+            overflow-x:auto;
+            gap:28px;
+            padding:30px 20px 60px;
+            scroll-snap-type:x mandatory;
+            align-items:center;
+            height: calc(100vh - 160px);
+        }
+
+        .gallery::-webkit-scrollbar{ height:12px }
+        .gallery::-webkit-scrollbar-thumb{ background: rgba(255,255,255,0.08); border-radius:10px }
+
+        .card{
+            position: sticky;
+            left: 0;
+            flex: 0 0 90vw;
+            max-width:1200px;
+            height:78vh;
+            display:flex;
+            border-radius:22px;
+            overflow:hidden;
+            background: rgba(10,12,18,0.75);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+            scroll-snap-align:start;
+        }
+
+        .card-image{ width:52%; height:100%; flex-shrink:0 }
+        .card-image img{ width:100%; height:100%; object-fit:cover; display:block }
+
+        .card-content{ width:48%; padding:35px 30px; background: rgba(0,0,0,0.45); display:flex; flex-direction:column; justify-content:center }
+        .card-content h2{ font-size:42px; margin:0 0 12px 0; color:var(--accent); font-weight:800 }
+        .card-content p{ color:#f2f2f2; line-height:1.6; font-size:16px }
+
+        @media (max-width:768px){
+            .card{ flex:0 0 92vw; height:62vh }
+            .card-image{ width:100%; height:50% }
+            .card-content{ width:100%; padding:18px }
+            .gallery{ height: auto; padding-bottom:80px }
+            .heading{ font-size:36px }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="heading">POKEMON GENERATION</div>
+
+    <div class="gallery">
+
+        <div class="card">
+            <div class="card-image">
+                <img src="C:\Users\lenovo\Downloads\OIP.webp" alt="Generation 1">
+            </div>
+            <div class="card-content">
+                <h2>Kanto Starters</h2>
+                <p>The first generation introduces the original 151 Pokémon and the iconic Kanto region. A classic start to every trainer's journey.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/04/pokemon-gen-2-starters.jpg" alt="Generation 2">
+            </div>
+            <div class="card-content">
+                <h2>Johto Additions</h2>
+                <p>Generation 2 expands the world with new Pokémon, evolutions, and the Johto region.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2024/10/fdh0safbv8dsab.jpg" alt="Generation 3">
+            </div>
+            <div class="card-content">
+                <h2>Hoenn Adventures</h2>
+                <p>Hoenn brings diverse environments and new mechanics like abilities and natures.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/04/pokemon-gen-4-starters.jpg" alt="Generation 4">
+            </div>
+            <div class="card-content">
+                <h2>Sinnoh Era</h2>
+                <p>Sinnoh expands the story and introduces many fan-favorite Pokémon and evolutions.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/04/pokemon-gen-5-starters.jpg" alt="Generation 5">
+            </div>
+            <div class="card-content">
+                <h2>Unova Innovations</h2>
+                <p>Unova introduces a larger set of new Pokémon and refined visuals for the series.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

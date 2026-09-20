@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Console</title>
+</head>
+
+<body>
+
+    
+
+    <script>
+        //console.log("Hello from JavaScript!");
+        //var x="Hello World";
+        //console.log(x);
+        /*const x="Hello World";
+        x="Bye!";
+        console.log(x);*/
+
+        // var x=5;
+        // if(x==5){
+        // let x=51;
+        // console.log(x);
+        // }
+
+    //     if (true) {
+    //     var x = 5;
+    //    }
+    //    console.log(x); 
+    //function
+    // function fun(){
+    //     console.log("function");
+    // }
+    // const fun(){
+    //     console.log("function");
+    // }
+    // var a=fun;
+
+
+    //HOISTING
+
+
+    //console.log(a);
+    //var a=5;   undefined
+    //let a=5;Cannot access 'a' before initialization
+    //Temporal Dead Zone
+    // const n;
+    // console.log(n);
+    // n=5;
+    const fish = ["Lion", , "Angel"];
+    console.log(fish);
+    // [ 'Lion', <1 empty item>, 'Angel' ]
+
+    //  var a=5;
+    //  console.log(typeof a);
+    //  var d="11";
+    //  console.log(typeof d);   
+    //  var c=3333333333333333333n;
+    //  console.log(typeof c);  
+    //  var b=true;
+    //  console.log(typeof b); 
+
+    //  let x={
+    //     "key":"value","key2":{
+    //         "key3":5
+    //     }
+    //  }
+    //  console.log(typeof x);
+    //  const z={
+    //     "key":"value","key2":{
+    //         "key3":5
+    //     }
+    //  }
+    //  console.log(typeof z);
+    // var x=1; 
+    // while (x < 10) {
+    // console.log(x++);
+    // }
+//     var fruitType="Oranges"
+//     switch (fruitType) {
+//   case "Oranges":
+//     console.log("Oranges are $0.59 a pound.");
+//     break;
+//   case "Apples":
+//     console.log("Apples are $0.32 a pound.");
+//     break;
+//   case "Bananas":
+//     console.log("Bananas are $0.48 a pound.");
+//     break;
+//   case "Cherries":
+//     console.log("Cherries are $3.00 a pound.");
+//     break;
+//   case "Mangoes":
+//     console.log("Mangoes are $0.56 a pound.");
+//     break;
+//   case "Papayas":
+//     console.log("Papayas are $2.79 a pound.");
+//     break;
+//   default:
+//     console.log(`Sorry, we are out of ${fruitType}.`);
+// }
+// console.log("Is there anything else you'd like?");
+
+
+// throw {
+//   toString() {
+//     return "I'm an object!";
+//   },
+// // };
+// function getMonthName(mo) {
+//   mo--; // Adjust month number for array index (so that 0 = Jan, 11 = Dec)
+//   // prettier-ignore
+//   const months = [
+//     "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+//     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+//   ];
+//   if (!months[mo]) {
+//     throw new Error("Invalid month code"); // throw keyword is used here
+//   }
+//   return months[mo];
+// }
+
+// try {
+//   // statements to try
+//   monthName = getMonthName(myMonth); // function could throw exception
+// } catch (e) {
+//   monthName = "unknown";
+//   logMyErrors(e); // pass exception object to error handler (i.e. your own function)
+// }
+    const b = new Boolean(false);
+if (b) {
+  console.log(true);
+}
+if (b == true) {
+  // this condition evaluates to false
+  console.log("b is ture");
+}
+    </script>
+
+</body>
+</html>
+

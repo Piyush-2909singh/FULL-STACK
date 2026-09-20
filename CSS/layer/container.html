@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+        body {
+            background-color: black;
+            color: white;
+            container-type: inline-size;
+            --accent-color: cyan;
+            font-family: Arial;
+        }
+
+        p {
+            font-size: 45px;
+        }
+
+        @container (width > 500px) {
+            p {
+                font-size: 70px;
+                background-color: green;
+                padding: 20px;
+            }
+        }
+
+        @container style(--accent-color: cyan) {
+            p {
+                color: var(--accent-color);
+            }
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+        }
+
+        @media (min-width: 500px) and (max-width: 700px) {
+            h2 {
+                font-size: 70px;
+                color: chartreuse;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <p>HELLO WORLD</p>
+
+    <h2>Hello GLA HOW R YOU</h2>
+
+</body>
+
+</html>

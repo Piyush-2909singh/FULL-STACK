@@ -1,0 +1,105 @@
+
+<html><head>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .card {
+                display: flex;
+                flex:1;
+                padding:2%;
+                flex-direction: row;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                justify-content: space-between;
+                border: 1px solid black;
+                background-color: aqua;
+                width:20vw;
+                height:20vh;
+
+            }
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid black;
+                background-color: lightgray;
+
+            }
+            .sidebar {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                background-color: darkgrey;
+                height: 200vh;
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+             <div class="sidebar" style="
+    flex: 2;
+">SIDEBAR
+
+             </div>
+             <div class="content" style="
+    flex: 8;
+">
+                <div class="navbar" style="width: 100%;">NAVBAR</div><br><br>
+                <div class="main-content">
+                    <div class="card">
+                        1
+                    </div>
+                    <br><br>
+                    <div class="card">
+                        1
+                    </div><br><br>
+                    <div class="card">
+                        1
+                    </div><br><br>
+                    <div class="card">
+                        1
+                    </div>
+                </div><br><br>
+                TABLE<table class="table">
+                    <tr>
+                        <th>USER</th>
+                        <th>Products</th>
+                        <th>Orders</th>
+                        <th>Revenue</th>
+                    </tr>
+                     <tr>
+                        <td>ram</td>
+                        <td>shyam</td>
+                        <td>kiran</td>
+                        <td>kumar</td>
+                    </tr>
+                    <tr>
+                        <td>watch</td>
+                        <td>laptop</td>
+                        <td>mobile</td>
+                        <td>tv</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>50</td>
+                        <td>20</td>
+                        <td>$5000</td>
+                    </tr>
+                    
+                </table>
+             </div>
+
+        </div>
+
+    
+</body></html>

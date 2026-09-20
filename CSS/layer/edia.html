@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+        .container {
+            container-type: inline-size;
+            width: 1000px;
+        }
+
+        p {
+            font-size: 45px;
+        }
+
+        @container (min-width: 800px) {
+            p {
+                font-size: 25px;
+                background-color: green;
+                color: blue;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <p>HELLO WORLD</p>
+    </div>
+
+</body>
+
+</html>

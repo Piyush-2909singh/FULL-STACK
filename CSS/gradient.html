@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gradient Background</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient( #a31d1d, #000000, #a31d1d, #000000, #a31d1d);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+        .box {
+            width: 600px;
+            height: 200px;
+            background: conic-gradient(
+                to right,
+                rgb(237, 20, 20)
+                rgb(198, 192, 192),
+                rgb(243, 232, 232),
+                rgb(0, 0, 0)
+            );
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(215, 207, 207, 0.5);
+        }
+
+        h2 {
+            margin: 5px 0;
+            font-size: 36px;
+            color: #ffffff;
+        }
+
+        .healthbar {
+            width: 80%;
+            height: 20px;
+            background: linear-gradient(
+                to right,
+                #00ff00,
+                #ffff00,
+                #ff0000
+            );
+
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <h2>HEALTH LEVEL</h2>
+
+        <h2>9000+</h2>
+
+        <div class="healthbar"></div>
+
+    </div>
+
+</body>
+</html>

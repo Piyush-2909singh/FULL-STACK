@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pokemon Generations</title>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet"
+>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+
+        background-image: url("pokemon-background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        background-color: #071a2a;
+    }
+
+    .heading {
+        font-family: Honk, sans-serif;
+        font-size: 90px;
+        color: white;
+        text-align: center;
+        padding: 40px 0;
+
+        text-shadow:
+            0 0 10px #ffd92f,
+            0 0 20px #ffd92f,
+            0 0 35px #1769ff;
+    }
+
+    .gallery {
+        display: flex;
+        overflow-x: auto;
+        gap: 28px;
+
+        padding: 30px 20px 60px;
+
+        scroll-snap-type: x mandatory;
+        cursor: grab;
+    }
+
+    .gallery:active {
+        cursor: grabbing;
+    }
+
+    .gallery::-webkit-scrollbar {
+        height: 12px;
+    }
+
+    .gallery::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 10px;
+    }
+
+    .gallery::-webkit-scrollbar-thumb {
+        background: rgba(255, 217, 47, 0.7);
+        border-radius: 10px;
+    }
+
+    .card {
+        position: sticky;
+        left: 0;
+
+        flex: 0 0 90vw;
+        max-width: 1200px;
+        height: 78vh;
+
+        display: flex;
+
+        border-radius: 22px;
+        overflow: hidden;
+
+        background: rgba(5, 15, 30, 0.78);
+
+        box-shadow:
+            0 20px 50px rgba(0, 0, 0, 0.7),
+            0 0 25px rgba(255, 217, 47, 0.25);
+
+        scroll-snap-align: start;
+
+        border: 2px solid rgba(255, 217, 47, 0.25);
+    }
+
+    .card-image {
+        width: 52%;
+        height: 100%;
+        flex-shrink: 0;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        display: block;
+    }
+
+    .card-content {
+        width: 48%;
+
+        padding: 35px 30px;
+
+        background:
+            linear-gradient(
+                135deg,
+                rgba(4, 16, 34, 0.95),
+                rgba(7, 26, 42, 0.88)
+            );
+
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-content h2 {
+        font-size: 52px;
+
+        color: #ffd92f;
+
+        font-family: 'Oswald', sans-serif;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 18px;
+
+        text-shadow:
+            0 0 8px rgba(255, 217, 47, 0.7),
+            0 0 15px rgba(0, 0, 0, 0.9);
+    }
+
+    .card-content p {
+        font-size: 18px;
+
+        line-height: 1.8;
+
+        color: #f2f2f2;
+
+        text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+
+        .heading {
+            font-size: 55px;
+            padding: 30px 10px;
+        }
+
+        .gallery {
+            gap: 20px;
+            padding: 20px 15px 50px;
+        }
+
+        .card {
+            flex: 0 0 92vw;
+            height: 70vh;
+
+            flex-direction: column;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 50%;
+        }
+
+        .card-content {
+            width: 100%;
+            height: 50%;
+
+            padding: 20px;
+        }
+
+        .card-content h2 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<div class="heading">
+    POKEMON GENERATIONS
+</div>
+
+
+<div class="gallery">
+
+    <!-- GENERATION 1 -->
+
+    <div class="card">
+
+        <div class="card-image">
+            <img
+                src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/04/pokemon-gen-1-starters.jpg"
+                alt="Generation 1 Pokemon"
+            >
+        </div>
+
+        <div class="card-content">
+
+            <h2>Kanto Starters</h2>
+
+            <p>
+                The first generation introduces the original 151 Pokémon
+                and the iconic Kanto region. Featuring legendary starters
+                like Bulbasaur, Charmander, and Squirtle, Generation 1
+                created the foundation of the Pokémon world and began
+                countless trainers' journeys.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- GENERATION 2 -->
+
+    <div class="card">
+
+        <div class="card-image">
+
+            <img
+                src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/04/pokemon-gen-2-starters.jpg"
+                alt="Generation 2 Pokemon"
+            >
+
+        </div>
+
+        <div class="card-content">
+
+            <h2>Johto Additions</h2>
+
+            <p>
+                Generation 2 expands the Pokémon universe with the
+                beautiful Johto region and introduces new Pokémon,
+                evolutions, abilities, and the day and night system.
+                Pokémon like Chikorita, Cyndaquil, and Totodile became
+                unforgettable additions to the series.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- GENERATION 3 -->
+
+    <div class="card">
+
+        <div class="card-image">
+
+            <img
+                src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2024/10/fdh0safbv8dsab.jpg"
+                alt="Generation 3 Pokemon"
+            >
+
+        </div>
+
+        <div class="card-content">
+
+            <h2>Hoenn Adventures</h2>
+
+            <p>
+                Hoenn brings a completely different environment filled
+                with oceans, mountains, forests, and volcanic landscapes.
+                Generation 3 introduced important mechanics such as
+                abilities, natures, and double battles, making Pokémon
+                battles more strategic than ever.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- GENERATION 4 -->
+
+    <div class="card">
+
+        <div class="card-image">
+
+            <img
+                src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/04/pokemon-gen-4-starters.jpg"
+                alt="Generation 4 Pokemon"
+            >
+
+        </div>
+
+        <div class="card-content">
+
+            <h2>Sinnoh Era</h2>
+
+            <p>
+                Generation 4 takes trainers to the Sinnoh region and
+                introduces some of the most popular Pokémon in the series.
+                With powerful legendary Pokémon, new evolutions, and an
+                expanded storyline, Sinnoh became one of the most memorable
+                generations for fans.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- GENERATION 5 -->
+
+    <div class="card">
+
+        <div class="card-image">
+
+            <img
+                src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/04/pokemon-gen-5-starters.jpg"
+                alt="Generation 5 Pokemon"
+            >
+
+        </div>
+
+        <div class="card-content">
+
+            <h2>Unova Innovations</h2>
+
+            <p>
+                Generation 5 introduces the Unova region and a completely
+                new collection of Pokémon. The games focused strongly on
+                story and identity while bringing improved visuals,
+                animated battles, and a fresh experience for trainers.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</body>
+
+</html>
