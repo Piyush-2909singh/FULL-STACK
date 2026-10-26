@@ -1,0 +1,17 @@
+// let a=5;
+// console.log(a,typeof a);
+// a="Piyush";
+// console.log(a,typeof a);
+// a=true;
+// console.log(a,typeof a);
+// a=null;
+// console.log(a,typeof a);
+// a=undefined;
+// console.log(a,typeof a);
+//console.log(5+1);
+// console.log(1+1+1+"1");
+// console.log("1"+1+1+"3");
+let a=5;
+console.log(a+a+a+a.toString());
+let b="5";
+console.log(parseInt(b)+parseInt(b)+parseInt(b)+parseInt(b));

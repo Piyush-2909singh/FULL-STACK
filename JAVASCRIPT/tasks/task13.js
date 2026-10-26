@@ -1,0 +1,1 @@
+let movrate={"Drishyam":5, "kgf":4, "Salaar":3, "Drishyam4":2, "Drishyam5":1};
